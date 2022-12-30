@@ -26,5 +26,4 @@ resource "rancher2_app_v2" "kured" {
   repo_name     = rancher2_catalog_v2.kured.name
   chart_name    = "kured"
   chart_version = "4.1.0"
-  values        = file("${path.module}/values.yaml")
 }
